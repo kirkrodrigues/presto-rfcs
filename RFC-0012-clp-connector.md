@@ -6,7 +6,7 @@ Proposers
 
 * Rui Wang ([@wraymo](https://github.com/wraymo)), YScope
 * Devin Gibson ([@gibber9809](https://github.com/gibber9809)), YScope
-* Xiaochong Wei ([@anlowee](https://github.com/anlowee), YScope
+* Xiaochong Wei ([@anlowee](https://github.com/anlowee)), YScope
 * Yu(Jack) Luo ([@jackluo923](https://github.com/jackluo923)), YScope
 * Kirk Rodrigues ([@kirkrodrigues](https://github.com/kirkrodrigues)), YScope
 
@@ -230,7 +230,7 @@ Each `ConnectorSplit` returned should contain both the corresponding archive pat
 
 The connector can query CLP's metadata database using the query computed during query plan optimization, however the returned results--e.g., archive IDs--may need to be transformed into physical paths depending on where the archives are stored. Currently, CLP supports reading archives from a filesystem or object storage, and like CLP's metadata, users may store CLP's archives in different ways. For instance, users may store their archives on object storage, with the archives for each dataset organized under a different object storage key; or users may store their archives on a filesystem with the archives for all datasets in the same directory. Therefore, the connector should expose the required methods through a `ClpSplitProvider` interface that takes the CLP metadata query, executes it against CLP's metadata database, and then returns a list of archive paths or URLs.
 
-In addition, recall from the [Background](#background) section that some users may use fine-grained metadata that can affect the query that we should run on each archive. Thus, when computing a metadata query, implementations of the `ClpMetadataProvider` interface should also return a list of predicates that can be used to filter records within the archive. `ClpSplitProvider` implementations should then use these predicates to update the KQL query that is run on each archive, and return the KQL query as part of the split.
+In addition, recall from the [background](#background) section that some users may use fine-grained metadata that can affect the query that we should run on each archive. Thus, when computing a metadata query, implementations of the `ClpMetadataProvider` interface should also return a list of predicates that can be used to filter records within the archive. `ClpSplitProvider` implementations should then use these predicates to update the KQL query that is run on each archive, and return the KQL query as part of the split.
 
 ## Table Scanning and Projection
 
