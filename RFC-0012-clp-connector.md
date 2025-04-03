@@ -4,15 +4,15 @@
 
 Proposers
 
-* Rui Wang (@wraymo), YScope
-* Devin Gibson (@gibber9809), YScope
-* Xiaochong Wei (@anlowee), YScope
-* Yu(Jack) Luo (@jackluo923), YScope
-* Kirk Rodrigues (@kirkrodrigues), YScope
+* Rui Wang ([@wraymo](https://github.com/wraymo)), YScope
+* Devin Gibson ([@gibber9809](https://github.com/gibber9809)), YScope
+* Xiaochong Wei ([@anlowee](https://github.com/anlowee), YScope
+* Yu(Jack) Luo ([@jackluo923](https://github.com/jackluo923)), YScope
+* Kirk Rodrigues ([@kirkrodrigues](https://github.com/kirkrodrigues)), YScope
 
 ## Related Issues
 
-* [y-scope/clp#78](https://github.com/y-scope/clp/issues/780)
+* [y-scope/clp#78](https://github.com/y-scope/clp/issues/78)
 * [yscope-clp Zulip chat](https://yscope-clp.zulipchat.com/#narrow/channel/364020-feature-requests/topic/Trino.20integration)
 
 ## Summary
